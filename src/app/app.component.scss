@@ -1,0 +1,51 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .winner{
+    p{
+      margin: 3vh 0 2vh 0;
+      font-size: 3rem;
+      color: rgb(255, 251, 0);
+    }
+  }
+  .player {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3vh 0 2vh 0;
+    input {
+      background-color: transparent;
+      border: none;
+      color: white;
+      width: 25%;
+      font-size: 3rem;
+      text-align: center;
+    }
+    input:focus{
+      outline: none;
+    }
+    .focus{
+      color: rgb(10, 202, 10);
+    }
+    .not-in-focus{
+      opacity: 0.3;
+    }
+  }
+  .main {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div {
+      width: 31%;
+      margin: 1%;
+      height: 20vh;
+    }
+  }
+}

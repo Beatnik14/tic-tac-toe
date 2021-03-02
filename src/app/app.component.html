@@ -1,0 +1,20 @@
+<div class="wrapper container-fluid">
+  <div class="winner" *ngIf = "winner">
+    <p>{{winner}}</p>
+  </div>
+  <div class="player">
+    <input type="text" [(ngModel)]="player1" [ngClass] = "{'focus': counter % 2 !== 0, 'not-in-focus': counter % 2 === 0}">
+    <input type="text" [(ngModel)]="player2" [ngClass] = "{'focus': counter % 2 === 0, 'not-in-focus': counter % 2 !== 0}">
+  </div>
+  <div class="main">
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr1_1" (click) = "onClick1_1()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr1_2" (click) = "onClick1_2()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr1_3" (click) = "onClick1_3()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr2_1" (click) = "onClick2_1()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr2_2" (click) = "onClick2_2()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr2_3" (click) = "onClick2_3()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr3_1" (click) = "onClick3_1()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr3_2" (click) = "onClick3_2()"></app-single-square></div>
+    <div><app-single-square [winner] = "checkWinner" [playerMove] = "sqr3_3" (click) = "onClick3_3()"></app-single-square></div>
+  </div>
+</div>
